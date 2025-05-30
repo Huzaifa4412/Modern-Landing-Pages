@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import "tailwindcss";
+
+body {
+    background-color: #000000;
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+
+
+.logo-text::after {
+    content: 'Beta';
+    background-color: #0F6FF5;
+    padding: 2px 6px;
+    font-weight: normal;
+    border-radius: 34px;
+    -webkit-border-radius: 34px;
+    -moz-border-radius: 34px;
+    -ms-border-radius: 34px;
+    -o-border-radius: 34px;
+    font-size: 12px;
+    position: absolute;
+    top: 0;
+    transform: translate(5%, -50%);
+    -webkit-transform: translate(5%, -50%);
+    -moz-transform: translate(5%, -50%);
+    -ms-transform: translate(5%, -50%);
+    -o-transform: translate(5%, -50%);
+}
+
+.nav-blur {
+    background: #0F0F10;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    /* backdrop-filter: blur(10px); */
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 50px 0px 50px;
+
+    @media screen and (max-width: 1288px) {
+        padding: 50px 30px 0px 50px !important;
+
+    }
+}
+
+img.robot {
+    /* width: 840px; */
+    /* fixed width */
+    height: auto;
+    /* height adjusts automatically */
+    object-fit: contain;
+    /* image fits nicely */
+}
+
+.hero-text {
+
+    font-size: clamp(3rem, 5vw, 6rem);
+    line-height: clamp(3rem, 4vw, 5.625rem);
+
+}
+
+.border-styling {
+    border-width: 1px 1px 0 1px;
+    border-color: #EC6DFF80;
+    border-style: solid;
+}
+
+.neon-button {
+    background-color: #160C18;
+    color: #fff;
+    padding: clamp(8px, 1.5vw, 12px) clamp(16px, 3vw, 24px) !important;
+    font-size: clamp(14px, 1vw, 18px) !important;
+    box-shadow: 0 0 2px #EC6DFF,
+        0 0 5px #EC6DFF,
+        0 0 10px #EC6DFF,
+        0 0 20px #EC6DFF;
+    transition: 0.3s;
+    cursor: pointer;
+
+
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 2rem;
+    /* or use 32px if you want the exact value */
+
+}
+
+.neon-button:hover {
+    box-shadow: 0 0 8px #EC6DFF,
+        0 0 10px #EC6DFF,
+        0 0 20px #EC6DFF,
+        0 0 40px #EC6DFF;
+    color: #EC6DFF;
+    gap: 15px;
+}
+
+.brands {
+    background-color: rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(10px);
+}
+
+.trusted-brands {
+    filter: grayscale(50%);
+    /* width: 20%; */
+    aspect-ratio: 3/2;
+    object-fit: contain;
+
+}
+
+.tags {
+    padding: 8px 16px;
+    background-color: #9080927a;
+    backdrop-filter: blur(5px);
+    border: 1px solid #ffffff62;
+    border-radius: 10px;
+    width: max-content;
+}
+
+.trusted-brands::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(128, 128, 128, 0.2);
+    /* light gray overlay */
+    pointer-events: none;
+}

@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <header class="py-[20px] ">
+        <nav
+            class="navbar nav-blur w-full max-w-[960px] flex flex-wrap items-center justify-between p-4 lg:p-[15px] rounded-[60px] h-auto lg:h-[76px] text-white mx-auto border-styling relative">
+            <img class="absolute w-full pointer-events-none translate-y-[-20%] top-0 left-1/2 translate-x-[-50%]"
+                src="/asserts/blur_up.png" alt="">
+
+            <!-- Logo -->
+            <div class="logo_setup flex items-center mb-4 lg:mb-0">
+                <img src="/asserts/logo.png" alt="" class="h-8 w-auto">
+                <div class="logo-text text-white font-bold relative ml-2">AlcOS</div>
+            </div>
+
+            <!-- Hamburger Button -->
+            <button id="menu-btn" class="lg:hidden flex flex-col gap-1">
+                <span class="block w-6 h-0.5 bg-white"></span>
+                <span class="block w-6 h-0.5 bg-white"></span>
+                <span class="block w-6 h-0.5 bg-white"></span>
+            </button>
+
+            <!-- Nav Items -->
+            <div id="menu" class="nav-items w-full lg:w-auto hidden lg:flex">
+                <ul class="flex flex-col lg:flex-row items-center gap-4 lg:gap-6 text-[16px]">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Company</a></li>
+                </ul>
+            </div>
+        </nav>
+
+
+    </header>
+
+    <main class="hero flex items-center justify-center lg:flex-row flex-col">
+        <div class="part-1 max-w-[605px] flex flex-col items-center lg:items-start gap-10 xl:gap-16">
+            <button class="neon-button border-styling ">
+                Lightning-fast, low-cost, easy.
+            </button>
+            <h2 class="text-[96px]/[90px] hero-text lg">Your AI-Powered 3D Builder</h2>
+            <p class="text-[#B5B0B7] w-full lg:w-[80%] para">Create stunning 3D assets effortlessly. No coding required.
+            </p>
+            <div class="buttons flex items-center gap-10 relative bottom-5 flex-col xl:flex-row">
+
+                <button class="neon-button flex gap-2 ">Start Creating 3D <img class="w-6 h-6" src="/asserts/icon.png"
+                        alt=""></button>
+                <button class="font-[500] text-xl flex gap-2"><span>Guid</span> <img class="w-6 h-6"
+                        src="/asserts/icon.png" alt=""></button>
+            </div>
+        </div>
+        <div class="part-2 relative bottom-0">
+            <div class="tags absolute top-[30%] left-[20%] z-50">No GPU needed</div>
+            <div class="tags  absolute top-4/5 right-[20%] z-50">No GPU needed</div>
+            <div class="tags  absolute top-2/3 right-1/2 z-50">No GPU needed</div>
+            <img src="/asserts/EllipseDown.png"
+                class="blurry_bg absolute left-0 bottom-0 translate-x-[-50%] w-full h-full" alt="">
+            <img src="/asserts/robot.png" class="robot relative bottom-0 w-full h-full" alt="">
+        </div>
+    </main>
+    <div
+        class="brands relative flex items-center justify-start overflow-x-auto lg:justify-center flex-nowrap w-full gap-4 lg:gap-20 border border-[#0F141C] py-5 px-5 overflow-y-hidden">
+        <img src="/asserts/EllipseUp.png" class="absolute top-0 right-0-0" alt="">
+        <img class="trusted-brands" src="/asserts/logos/logo.png" alt="">
+        <img class="trusted-brands" src="/asserts/logos/logo1.png" alt="">
+        <img class="trusted-brands" src="/asserts/logos/logo2.png" alt="">
+        <img class="trusted-brands" src="/asserts/logos/logo3.png" alt="">
+        <img class="trusted-brands" src="/asserts/logos/logo4.png" alt="">
+        <img class="trusted-brands" src="/asserts/logos/logo5.png" alt="">
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="/script.js"></script>
+
+</body>
+
+</html>
